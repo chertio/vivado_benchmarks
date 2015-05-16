@@ -1,2 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog"/>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="@W [XFORM-631] Renaming function 'prims::chol_decomp_generic&lt;float, float, 6>' (chol_fwbw_solve/base_primitives.h:54:37) into chol_decomp_generic." projectName="chol_fwbw_solve" solutionName="solution1" date="2015-05-16T16:21:44.326-0700" type="Warning"/>
+        <logs message="@W [XFORM-631] Renaming function 'hls::cholesky_basic&lt;true, 6, hls::cholesky_traits&lt;6, float, float>, float, float>' (/tools/xilinx/Vivado_HLS/2015.1/common/technology/autopilot/hls/linear_algebra/hls_cholesky.h:135:52) into cholesky_basic." projectName="chol_fwbw_solve" solutionName="solution1" date="2015-05-16T16:21:44.097-0700" type="Warning"/>
+        <logs message="@W [HLS-40] No /tools/designs/rrs/dev/vivado_benchmarks/chol_fwbw_solve/solution2/solution2.aps file found." projectName="chol_fwbw_solve" solutionName="solution1" date="2015-05-16T16:20:34.340-0700" type="Warning"/>
+      </synLog>
+      <simLog>
+        <logs message="@W [HLS-40] No /tools/designs/rrs/dev/vivado_benchmarks/chol_fwbw_solve/solution2/solution2.aps file found." projectName="chol_fwbw_solve" solutionName="solution1" date="2015-05-16T16:22:06.326-0700" type="Warning"/>
+      </simLog>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>
