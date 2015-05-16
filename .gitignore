@@ -99,3 +99,5 @@ syn*
 !.cproject
 !.project
 !.settings
+!LICENSE
+!README.md
