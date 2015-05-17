@@ -9,20 +9,11 @@ Copyright (C) 2015 Xilinx Inc. All rights reserved.
 @I [HLS-10] Setting target device to 'xc7k160tfbg484-2'
 @I [SIM-47] Using XSIM for RTL simulation.
 @I [SIM-14] Instrumenting C test bench ...
-@E [SIM-317] C++ compile error.
-@E [SIM-321] EXE file generate failed.
-@E [SIM-321] EXE file generate failed.
-@E [SIM-331] Aborting co-simulation: C simulation failed, compilation errors.
-@E [SIM-4] *** C/RTL co-simulation finished: FAIL ***
-command 'ap_source' returned error code
-    while executing
-"source /tools/designs/rrs/sandbox/vivado_benchmarks/chol_fwbw_solve/solution1/cosim.tcl"
-    invoked from within
-"hls::main /tools/designs/rrs/sandbox/vivado_benchmarks/chol_fwbw_solve/solution1/cosim.tcl"
-    ("uplevel" body line 1)
-    invoked from within
-"uplevel 1 hls::main {*}$args"
-    (procedure "hls_proc" line 5)
-    invoked from within
-"hls_proc $argv"
+@I [SIM-302] Starting C TB testing ... 
+@I [SIM-333] Generating C post check test bench ...
+@I [SIM-12] Generating RTL test bench ...
+@I [SIM-323] Starting verilog simulation. 
+@I [SIM-15] Starting XSIM ...
+@I [SIM-316] Starting C post checking ...
+@I [SIM-1000] *** C/RTL co-simulation finished: PASS ***
 @I [LIC-101] Checked in feature [HLS]

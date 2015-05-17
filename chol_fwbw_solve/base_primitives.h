@@ -82,8 +82,8 @@ template<typename T_IN,
 		 typename T_OUT,
 		 typename T_RHS,
 		 int RCA>
-int chol_fwbw_solve_generic(const T_IN A[RCA][RCA],
-					const T_RHS b[RCA][1],
+int chol_fwbw_solve_generic(T_IN A[RCA][RCA],
+					T_RHS b[RCA][1],
 					T_RHS x[RCA][1]) {
 	  T_IN  a_i[RCA][RCA];
 	  T_OUT l_i[RCA][RCA];

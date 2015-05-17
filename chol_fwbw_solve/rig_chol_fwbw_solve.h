@@ -13,8 +13,8 @@ typedef float VECTOR_RHS_T;
 
 }
 
-int chol_fwbw_solve(const cfbs::MATRIX_IN_T A[cfbs::ROWS_COLS_A][cfbs::ROWS_COLS_A],
-					const cfbs::VECTOR_RHS_T b[cfbs::ROWS_COLS_A][1],
+int chol_fwbw_solve(cfbs::MATRIX_IN_T A[cfbs::ROWS_COLS_A][cfbs::ROWS_COLS_A],
+					cfbs::VECTOR_RHS_T b[cfbs::ROWS_COLS_A][1],
 					cfbs::VECTOR_RHS_T x[cfbs::ROWS_COLS_A][1]);
 
 #endif
