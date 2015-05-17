@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
   <source>
-    <originFiles name="rig_cholesky.cpp" path="/tools/designs/rrs/sandbox/vivado_benchmarks/chol_fwbw_solve/rig_cholesky.cpp"/>
     <originFiles name="base_primitives.cpp" path="/tools/designs/rrs/sandbox/vivado_benchmarks/chol_fwbw_solve/base_primitives.cpp"/>
     <originFiles name="rig_chol_fwbw_solve.cpp" path="/tools/designs/rrs/sandbox/vivado_benchmarks/chol_fwbw_solve/rig_chol_fwbw_solve.cpp"/>
+    <originFiles name="rig_cholesky.cpp" path="/tools/designs/rrs/sandbox/vivado_benchmarks/chol_fwbw_solve/rig_cholesky.cpp"/>
   </source>
   <testbench>
-    <originFiles name="testbench.cpp" path="/tools/designs/rrs/sandbox/vivado_benchmarks/chol_fwbw_solve/testbench.cpp"/>
-    <originFiles name="bench_cholesky.cpp" path="/tools/designs/rrs/sandbox/vivado_benchmarks/chol_fwbw_solve/bench_cholesky.cpp"/>
     <originFiles name="bench_chol_fwbw_solve.cpp" path="/tools/designs/rrs/sandbox/vivado_benchmarks/chol_fwbw_solve/bench_chol_fwbw_solve.cpp"/>
+    <originFiles name="bench_cholesky.cpp" path="/tools/designs/rrs/sandbox/vivado_benchmarks/chol_fwbw_solve/bench_cholesky.cpp"/>
+    <originFiles name="testbench.cpp" path="/tools/designs/rrs/sandbox/vivado_benchmarks/chol_fwbw_solve/testbench.cpp"/>
   </testbench>
 </autopilotfilemapping:AutoPilotFileMapping>
