@@ -29,52 +29,72 @@
 		<link>
 			<name>source</name>
 			<type>2</type>
-			<location>/tools/designs/rrs/dev/vivado_benchmarks/chol_fwbw_solve/.apc/.src</location>
+			<location>/tools/designs/rrs/sandbox/vivado_benchmarks/chol_fwbw_solve/.apc/.src</location>
 		</link>
 		<link>
 			<name>testbench</name>
 			<type>2</type>
-			<location>/tools/designs/rrs/dev/vivado_benchmarks/chol_fwbw_solve/.apc/.tb</location>
+			<location>/tools/designs/rrs/sandbox/vivado_benchmarks/chol_fwbw_solve/.apc/.tb</location>
+		</link>
+		<link>
+			<name>.reference/base_primitives.h</name>
+			<type>1</type>
+			<location>/tools/designs/rrs/sandbox/vivado_benchmarks/chol_fwbw_solve/base_primitives.h</location>
+		</link>
+		<link>
+			<name>.reference/hls_matrix_multiply.h</name>
+			<type>1</type>
+			<location>/tools/xilinx/Vivado_HLS/2015.1/include/hls/linear_algebra/hls_matrix_multiply.h</location>
 		</link>
 		<link>
 			<name>solution1/constraints</name>
 			<type>2</type>
-			<location>/tools/designs/rrs/dev/vivado_benchmarks/chol_fwbw_solve/solution1/.tcls</location>
+			<location>/tools/designs/rrs/sandbox/vivado_benchmarks/chol_fwbw_solve/solution1/.tcls</location>
 		</link>
 		<link>
 			<name>source/base_primitives.cpp</name>
 			<type>1</type>
-			<location>/tools/designs/rrs/dev/vivado_benchmarks/chol_fwbw_solve/base_primitives.cpp</location>
+			<location>/tools/designs/rrs/sandbox/vivado_benchmarks/chol_fwbw_solve/base_primitives.cpp</location>
+		</link>
+		<link>
+			<name>source/rig_chol_fwbw_solve.cpp</name>
+			<type>1</type>
+			<location>/tools/designs/rrs/sandbox/vivado_benchmarks/chol_fwbw_solve/rig_chol_fwbw_solve.cpp</location>
 		</link>
 		<link>
 			<name>source/rig_cholesky.cpp</name>
 			<type>1</type>
-			<location>/tools/designs/rrs/dev/vivado_benchmarks/chol_fwbw_solve/rig_cholesky.cpp</location>
+			<location>/tools/designs/rrs/sandbox/vivado_benchmarks/chol_fwbw_solve/rig_cholesky.cpp</location>
+		</link>
+		<link>
+			<name>testbench/bench_chol_fwbw_solve.cpp</name>
+			<type>1</type>
+			<location>/tools/designs/rrs/sandbox/vivado_benchmarks/chol_fwbw_solve/bench_chol_fwbw_solve.cpp</location>
 		</link>
 		<link>
 			<name>testbench/bench_cholesky.cpp</name>
 			<type>1</type>
-			<location>/tools/designs/rrs/dev/vivado_benchmarks/chol_fwbw_solve/bench_cholesky.cpp</location>
+			<location>/tools/designs/rrs/sandbox/vivado_benchmarks/chol_fwbw_solve/bench_cholesky.cpp</location>
 		</link>
 		<link>
 			<name>testbench/testbench.cpp</name>
 			<type>1</type>
-			<location>/tools/designs/rrs/dev/vivado_benchmarks/chol_fwbw_solve/testbench.cpp</location>
+			<location>/tools/designs/rrs/sandbox/vivado_benchmarks/chol_fwbw_solve/testbench.cpp</location>
 		</link>
 		<link>
 			<name>solution1/constraints/.xml.directive</name>
 			<type>1</type>
-			<location>/tools/designs/rrs/dev/vivado_benchmarks/chol_fwbw_solve/solution1/solution1.directive</location>
+			<location>/tools/designs/rrs/sandbox/vivado_benchmarks/chol_fwbw_solve/solution1/solution1.directive</location>
 		</link>
 		<link>
 			<name>solution1/constraints/directives.tcl</name>
 			<type>1</type>
-			<location>/tools/designs/rrs/dev/vivado_benchmarks/chol_fwbw_solve/solution1/directives.tcl</location>
+			<location>/tools/designs/rrs/sandbox/vivado_benchmarks/chol_fwbw_solve/solution1/directives.tcl</location>
 		</link>
 		<link>
 			<name>solution1/constraints/script.tcl</name>
 			<type>1</type>
-			<location>/tools/designs/rrs/dev/vivado_benchmarks/chol_fwbw_solve/solution1/script.tcl</location>
+			<location>/tools/designs/rrs/sandbox/vivado_benchmarks/chol_fwbw_solve/solution1/script.tcl</location>
 		</link>
 	</linkedResources>
 </projectDescription>

@@ -1,6 +1,8 @@
 #ifndef CHOLESKY_BENCH_H
 #define CHOLESKY_BENCH_H
 
-int cholesky_simple_test();
+namespace chol {
+int simple_test();
+}
 
 #endif

@@ -6,7 +6,7 @@
         <clock name="default" period="10"/>
     </clockList>
     <config>
-        <schedule model="chol_decomp"/>
+        <schedule model="chol_fwbw_solve"/>
     </config>
     <UIConfigurations>
         <UIAutosynConf hideTrivialOp="true" isBasedOnBoard="false" isSolutionDirty="false" isStopAskAgain="false" showDetailDesignViewer="false">

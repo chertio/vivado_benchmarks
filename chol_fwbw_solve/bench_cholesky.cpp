@@ -5,7 +5,9 @@
 #include "hls/linear_algebra/utils/x_hls_matrix_tb_utils.h"
 #include "hls_linear_algebra.h"
 
-int cholesky_simple_test() {
+namespace chol {
+
+int simple_test() {
 	
 	int cholesky_success = 0;
 	
@@ -43,4 +45,6 @@ int cholesky_simple_test() {
     }
     
     return (cholesky_success|fail);
+}
+
 }

@@ -28,9 +28,10 @@
 									<listOptionValue builtIn="false" value="/tools/xilinx/Vivado_HLS/2015.1/lnx64/tools/auto_cc/include"/>
 									<listOptionValue builtIn="false" value="/tools/xilinx/Vivado_HLS/2015.1/lnx64/tools/systemc/include"/>
 									<listOptionValue builtIn="false" value="/tools/xilinx/Vivado_HLS/2015.1/include"/>
-									<listOptionValue builtIn="false" value="/tools/designs/rrs/dev/vivado_benchmarks"/>
+									<listOptionValue builtIn="false" value="/tools/designs/rrs/sandbox/vivado_benchmarks"/>
 									<listOptionValue builtIn="false" value="/tools/xilinx/Vivado_HLS/2015.1/include/ap_sysc"/>
 									<listOptionValue builtIn="false" value="/tools/xilinx/Vivado_HLS/2015.1/include/etc"/>
+									<listOptionValue builtIn="false" value="/tools/designs/rrs/dev/vivado_benchmarks"/>
 								</option>
 								<option id="gnu.cpp.compiler.option.preprocessor.def.310831390" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="AESL_TB"/>
@@ -46,9 +47,10 @@
 									<listOptionValue builtIn="false" value="/tools/xilinx/Vivado_HLS/2015.1/lnx64/tools/auto_cc/include"/>
 									<listOptionValue builtIn="false" value="/tools/xilinx/Vivado_HLS/2015.1/lnx64/tools/systemc/include"/>
 									<listOptionValue builtIn="false" value="/tools/xilinx/Vivado_HLS/2015.1/include"/>
-									<listOptionValue builtIn="false" value="/tools/designs/rrs/dev/vivado_benchmarks"/>
+									<listOptionValue builtIn="false" value="/tools/designs/rrs/sandbox/vivado_benchmarks"/>
 									<listOptionValue builtIn="false" value="/tools/xilinx/Vivado_HLS/2015.1/include/ap_sysc"/>
 									<listOptionValue builtIn="false" value="/tools/xilinx/Vivado_HLS/2015.1/include/etc"/>
+									<listOptionValue builtIn="false" value="/tools/designs/rrs/dev/vivado_benchmarks"/>
 								</option>
 								<option id="gnu.c.compiler.option.preprocessor.def.symbols.994962296" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="AESL_TB"/>
@@ -114,9 +116,10 @@
 									<listOptionValue builtIn="false" value="/tools/xilinx/Vivado_HLS/2015.1/lnx64/tools/auto_cc/include"/>
 									<listOptionValue builtIn="false" value="/tools/xilinx/Vivado_HLS/2015.1/lnx64/tools/systemc/include"/>
 									<listOptionValue builtIn="false" value="/tools/xilinx/Vivado_HLS/2015.1/include"/>
-									<listOptionValue builtIn="false" value="/tools/designs/rrs/dev/vivado_benchmarks"/>
+									<listOptionValue builtIn="false" value="/tools/designs/rrs/sandbox/vivado_benchmarks"/>
 									<listOptionValue builtIn="false" value="/tools/xilinx/Vivado_HLS/2015.1/include/ap_sysc"/>
 									<listOptionValue builtIn="false" value="/tools/xilinx/Vivado_HLS/2015.1/include/etc"/>
+									<listOptionValue builtIn="false" value="/tools/designs/rrs/dev/vivado_benchmarks"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1747624800" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
 							</tool>
@@ -127,9 +130,10 @@
 									<listOptionValue builtIn="false" value="/tools/xilinx/Vivado_HLS/2015.1/lnx64/tools/auto_cc/include"/>
 									<listOptionValue builtIn="false" value="/tools/xilinx/Vivado_HLS/2015.1/lnx64/tools/systemc/include"/>
 									<listOptionValue builtIn="false" value="/tools/xilinx/Vivado_HLS/2015.1/include"/>
-									<listOptionValue builtIn="false" value="/tools/designs/rrs/dev/vivado_benchmarks"/>
+									<listOptionValue builtIn="false" value="/tools/designs/rrs/sandbox/vivado_benchmarks"/>
 									<listOptionValue builtIn="false" value="/tools/xilinx/Vivado_HLS/2015.1/include/ap_sysc"/>
 									<listOptionValue builtIn="false" value="/tools/xilinx/Vivado_HLS/2015.1/include/etc"/>
+									<listOptionValue builtIn="false" value="/tools/designs/rrs/dev/vivado_benchmarks"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.1772279195" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
 							</tool>

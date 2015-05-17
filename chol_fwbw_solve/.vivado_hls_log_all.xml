@@ -3,7 +3,13 @@
   <errorLogs>
     <logs>
       <synLog/>
-      <simLog/>
+      <simLog>
+        <logs message="@E [SIM-4] *** C/RTL co-simulation finished: FAIL ***&#xA;command 'ap_source' returned error code&#xA;    while executing&#xA;&quot;source /tools/designs/rrs/sandbox/vivado_benchmarks/chol_fwbw_solve/solution1/cosim.tcl&quot;&#xA;    invoked from within&#xA;&quot;hls::main /tools/designs/rrs/sandbox/vivado_benchmarks/chol_fwbw_solve/solution1/cosim.tcl&quot;&#xA;    (&quot;uplevel&quot; body line 1)&#xA;    invoked from within&#xA;&quot;uplevel 1 hls::main {*}$args&quot;&#xA;    (procedure &quot;hls_proc&quot; line 5)&#xA;    invoked from within&#xA;&quot;hls_proc $argv&quot;" projectName="chol_fwbw_solve" solutionName="solution1" date="2015-05-16T23:59:27.023-0700"/>
+        <logs message="@E [SIM-331] Aborting co-simulation: C simulation failed, compilation errors." projectName="chol_fwbw_solve" solutionName="solution1" date="2015-05-16T23:59:27.002-0700"/>
+        <logs message="@E [SIM-321] EXE file generate failed." projectName="chol_fwbw_solve" solutionName="solution1" date="2015-05-16T23:59:26.997-0700"/>
+        <logs message="@E [SIM-321] EXE file generate failed." projectName="chol_fwbw_solve" solutionName="solution1" date="2015-05-16T23:59:26.992-0700"/>
+        <logs message="@E [SIM-317] C++ compile error." projectName="chol_fwbw_solve" solutionName="solution1" date="2015-05-16T23:59:26.986-0700"/>
+      </simLog>
       <mgLog/>
       <packageLog/>
       <csimLog/>
@@ -12,12 +18,14 @@
   <warningLogs>
     <logs>
       <synLog>
-        <logs message="@W [XFORM-631] Renaming function 'prims::chol_decomp_generic&lt;float, float, 6>' (chol_fwbw_solve/base_primitives.h:54:37) into chol_decomp_generic." projectName="chol_fwbw_solve" solutionName="solution1" date="2015-05-16T16:21:44.326-0700" type="Warning"/>
-        <logs message="@W [XFORM-631] Renaming function 'hls::cholesky_basic&lt;true, 6, hls::cholesky_traits&lt;6, float, float>, float, float>' (/tools/xilinx/Vivado_HLS/2015.1/common/technology/autopilot/hls/linear_algebra/hls_cholesky.h:135:52) into cholesky_basic." projectName="chol_fwbw_solve" solutionName="solution1" date="2015-05-16T16:21:44.097-0700" type="Warning"/>
-        <logs message="@W [HLS-40] No /tools/designs/rrs/dev/vivado_benchmarks/chol_fwbw_solve/solution2/solution2.aps file found." projectName="chol_fwbw_solve" solutionName="solution1" date="2015-05-16T16:20:34.340-0700" type="Warning"/>
+        <logs message="@W [XFORM-631] Renaming function 'hls::cholesky_basic&lt;true, 6, hls::cholesky_traits&lt;6, float, float>, float, float>' (/tools/xilinx/Vivado_HLS/2015.1/common/technology/autopilot/hls/linear_algebra/hls_cholesky.h:135:52) into cholesky_basic." projectName="chol_fwbw_solve" solutionName="solution1" date="2015-05-16T23:54:07.756-0700" type="Warning"/>
+        <logs message="@W [XFORM-631] Renaming function 'prims::chol_fwbw_solve_generic&lt;float, float, float, 6>' (chol_fwbw_solve/base_primitives.h:20:42) into chol_fwbw_solve_generic." projectName="chol_fwbw_solve" solutionName="solution1" date="2015-05-16T23:54:07.459-0700" type="Warning"/>
+        <logs message="@W [XFORM-561] Updating loop upper bound from 6 to 5 for loop 'l_col_loop' in function 'prims::chol_fwbw_solve_generic&lt;float, float, float, 6>'." projectName="chol_fwbw_solve" solutionName="solution1" date="2015-05-16T23:54:05.817-0700" type="Warning"/>
+        <logs message="@W [HLS-40] No /tools/designs/rrs/sandbox/vivado_benchmarks/chol_fwbw_solve/solution2/solution2.aps file found." projectName="chol_fwbw_solve" solutionName="solution1" date="2015-05-16T23:52:22.970-0700" type="Warning"/>
       </synLog>
       <simLog>
-        <logs message="@W [HLS-40] No /tools/designs/rrs/dev/vivado_benchmarks/chol_fwbw_solve/solution2/solution2.aps file found." projectName="chol_fwbw_solve" solutionName="solution1" date="2015-05-16T16:22:06.326-0700" type="Warning"/>
+        <logs message="make: Warning: File `cosim.tv.mk' has modification time 45 s in the future&#xA;obj/apatb_chol_fwbw_solve.o: In function `chol_fwbw_solve(float (*) [6], float (*) [1], float (*) [1])':&#xA;apatb_chol_fwbw_solve.cpp:(.text+0x156d): undefined reference to `AESL_ORIG_DUT_chol_fwbw_solve(float (*) [6], float (*) [1], float (*) [1])'&#xA;obj/bench_chol_fwbw_solve.cpp_pre.cpp.tb.o: In function `cfbs::simple_test()':&#xA;bench_chol_fwbw_solve.cpp_pre.cpp.tb.cpp:(.text+0xa541): undefined reference to `chol_fwbw_solve(float const (*) [6], float const (*) [1], float (*) [1])'&#xA;collect2: ld returned 1 exit status&#xA;make: *** [cosim.tv.exe] Error 1" projectName="chol_fwbw_solve" solutionName="solution1" date="2015-05-16T23:59:26.980-0700" type="Warning"/>
+        <logs message="@W [HLS-40] No /tools/designs/rrs/sandbox/vivado_benchmarks/chol_fwbw_solve/solution2/solution2.aps file found." projectName="chol_fwbw_solve" solutionName="solution1" date="2015-05-16T23:56:08.114-0700" type="Warning"/>
       </simLog>
       <mgLog/>
       <packageLog/>
