@@ -1,6 +1,7 @@
 #ifndef PRIMITIVES_H
 #define PRIMITIVES_H
 #include "hls_linear_algebra.h"
+#include "my_cholesky.h"
 
 const unsigned LOWER_TRIANGULAR = true;
 
@@ -62,7 +63,7 @@ template<typename T_IN,
   }
 
   // Call Cholesky
-  if ( hls::cholesky<LOWER_TRIANGULAR, RCA, T_IN, T_OUT>(a_i, l_i) ) {
+  if ( my::cholesky<LOWER_TRIANGULAR, RCA, T_IN, T_OUT>(a_i, l_i) ) {
     // Error - matrix was not symmetric positive definite
     return 1;
   }
