@@ -1,2 +1,38 @@
-<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView"/>
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+    <sourceFile name="">
+        <directive functionName="cholesky_basic_my" label="col_loop" functionLabel="">
+            <pragma name="UNROLL"/>
+        </directive>
+        <directive functionName="cholesky_basic_my" label="diag_loop" functionLabel="">
+            <pragma name="UNROLL"/>
+        </directive>
+        <directive functionName="cholesky_basic_my" label="off_diag_loop" functionLabel="">
+            <pragma name="UNROLL"/>
+        </directive>
+        <directive functionName="cholesky_basic_my" label="sum_loop" functionLabel="">
+            <pragma name="UNROLL"/>
+        </directive>
+        <directive functionName="forward_substitution" label="l_row_loop" functionLabel="">
+            <pragma name="UNROLL"/>
+        </directive>
+        <directive functionName="forward_substitution" label="l_col_loop" functionLabel="">
+            <pragma name="UNROLL"/>
+        </directive>
+        <directive functionName="backward_substitution" label="l_col_loop" functionLabel="">
+            <pragma name="UNROLL"/>
+        </directive>
+        <directive functionName="backward_substitution" label="l_row_loop" functionLabel="">
+            <pragma name="UNROLL"/>
+        </directive>
+        <directive functionName="chol_fwbw_solve_generic" label="a_col_loop" functionLabel="">
+            <pragma name="PIPELINE"/>
+        </directive>
+        <directive functionName="chol_fwbw_solve_generic" label="b_in_row_loop" functionLabel="">
+            <pragma name="PIPELINE"/>
+        </directive>
+        <directive functionName="chol_fwbw_solve_generic" label="x_final_row_loop" functionLabel="">
+            <pragma name="PIPELINE"/>
+        </directive>
+    </sourceFile>
+</AutoPilot:ProjectResources>
 
