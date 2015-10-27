@@ -91,22 +91,22 @@ int chol_fwbw_solve_generic(T_IN A[RCA][RCA],
 	  T_RHS b_i[RCA][1];
 
 	  T_RHS x_intermediate[RCA][1];	// after the fw subst
-	  T_RHS x_final[RCA][1];		// after the bw subst
+	  //T_RHS x_final[RCA][1];		// after the bw subst
 
 	  // Copy input data to local memory
-	  a_row_loop : for (int r=0;r<RCA;r++) {
+	  /*a_row_loop : for (int r=0;r<RCA;r++) {
 	    a_col_loop : for (int c=0;c<RCA;c++) {
 	      a_i[r][c] = A[r][c];
 	    }
-	  }
+	  }*/
 
-	  b_in_row_loop : for (int r=0;r<RCA;r++)
-		  b_i[r][0] = b[r][0];
+	  /*b_in_row_loop : for (int r=0;r<RCA;r++)
+		  b_i[r][0] = b[r][0];*/
 
 	  // solve
-	  my::cholesky<LOWER_TRIANGULAR, RCA, T_IN, T_OUT>(a_i, l_i);
-	  forward_substitution(l_i, b_i, x_intermediate);
-	  backward_substitution(l_i, x_intermediate, x_final);
+	  my::cholesky<LOWER_TRIANGULAR, RCA, T_IN, T_OUT>(A, l_i);
+	  forward_substitution(l_i, b, x_intermediate);
+	  backward_substitution(l_i, x_intermediate, x);
 
 	  // how does this get synthesized??
 	  // is it necessary to have it?
@@ -116,8 +116,8 @@ int chol_fwbw_solve_generic(T_IN A[RCA][RCA],
 	  //}
 
 	  // Copy local memory contents to output
-	  x_final_row_loop : for (int r=0;r<RCA;r++)
-		  x[r][0] = x_final[r][0];
+	  /*x_final_row_loop : for (int r=0;r<RCA;r++)
+		  x[r][0] = x_final[r][0];*/
 
 	  return 0;
 }
