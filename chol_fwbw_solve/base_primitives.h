@@ -81,6 +81,32 @@ template<typename T_IN,
 
 template<typename T_IN,
 		 typename T_OUT,
+		 int RCA>
+	int chol_decomp_simple(T_IN A[RCA][RCA],
+						   T_OUT L[RCA][RCA]){
+	l_row_loop : for (int r=0; r<RCA; r++) {
+
+		// calculate the rest of the row
+		l_col_loop: for (int c=0; c<r; c++) {
+			L[r][c] = A[r][c];
+			l_rc_loop: for (int k=0; k<c; k++) {
+				L[r][c] -= L[r][k]*L[c][k];
+			}
+			L[r][c] /= L[c][c];
+		}
+
+		// calculate the diagonal element
+		L[r][r] = A[r][r];
+		l_rr_loop: for (int k=0; k<r; k++) {
+			L[r][r] -= L[r][k]*L[r][k];
+		}
+		L[r][r] = sqrt(L[r][r]);
+	}
+	return 0;
+}
+
+template<typename T_IN,
+		 typename T_OUT,
 		 typename T_RHS,
 		 int RCA>
 int chol_fwbw_solve_generic(T_IN A[RCA][RCA],
@@ -104,7 +130,8 @@ int chol_fwbw_solve_generic(T_IN A[RCA][RCA],
 		  b_i[r][0] = b[r][0];*/
 
 	  // solve
-	  my::cholesky<LOWER_TRIANGULAR, RCA, T_IN, T_OUT>(A, l_i);
+	  //my::cholesky<LOWER_TRIANGULAR, RCA, T_IN, T_OUT>(A, l_i);
+	  chol_decomp_simple(A, l_i);
 	  forward_substitution(l_i, b, x_intermediate);
 	  backward_substitution(l_i, x_intermediate, x);
 

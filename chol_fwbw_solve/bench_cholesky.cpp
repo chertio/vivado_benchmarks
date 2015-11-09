@@ -13,6 +13,7 @@ int simple_test() {
 	
     MATRIX_IN_T A [ROWS_COLS_A][ROWS_COLS_A];
     MATRIX_OUT_T L [ROWS_COLS_A][ROWS_COLS_A];
+    MATRIX_OUT_T Lcheck [ROWS_COLS_A][ROWS_COLS_A];
     MATRIX_IN_T Ar[ROWS_COLS_A][ROWS_COLS_A];
 
     A[0][0] = 115.0; A[0][1] =  -7.0; A[0][2] = -12.0; A[0][3] = -14.0; A[0][4] =  26.0; A[0][5] =   0.0;
@@ -22,7 +23,8 @@ int simple_test() {
     A[4][0] =  26.0; A[4][1] =  -6.0; A[4][2] = -12.0; A[4][3] =  -5.0; A[4][4] = 127.0; A[4][5] = -10.0;
     A[5][0] =   0.0; A[5][1] =  -3.0; A[5][2] =   0.0; A[5][3] =  -6.0; A[5][4] = -10.0; A[5][5] = 119.0;
 
-    cholesky_success = chol_decomp(A,L);
+    cholesky_success = chol_decomp_simple(A,L);
+    chol_decomp_generic(A,Lcheck);
 
     // Now re-create A: Ar = L * L'
     hls::matrix_multiply<hls::NoTranspose,hls::Transpose,ROWS_COLS_A,ROWS_COLS_A,ROWS_COLS_A,ROWS_COLS_A,ROWS_COLS_A,ROWS_COLS_A,float,float>(L, L, Ar);
@@ -32,6 +34,9 @@ int simple_test() {
 
     printf("L = \n");
     hls::print_matrix<ROWS_COLS_A, ROWS_COLS_A, float, hls::NoTranspose>(L, "   ");
+
+    printf("Lcheck = \n");
+    hls::print_matrix<ROWS_COLS_A, ROWS_COLS_A, float, hls::NoTranspose>(Lcheck, "   ");
 
     printf("A reconstructed = \n");
     hls::print_matrix<ROWS_COLS_A, ROWS_COLS_A, float, hls::NoTranspose>(Ar, "   ");

@@ -13,7 +13,7 @@ int solve_success = 0;
 MATRIX_IN_T A [ROWS_COLS_A][ROWS_COLS_A];
 VECTOR_RHS_T b[ROWS_COLS_A][1];
 VECTOR_RHS_T m[ROWS_COLS_A][1];
-VECTOR_RHS_T x[ROWS_COLS_A][1];
+VECTOR_RHS_T br[ROWS_COLS_A][1];
 
 A[0][0] = 115.0; A[0][1] =  -7.0; A[0][2] = -12.0; A[0][3] = -14.0; A[0][4] =  26.0; A[0][5] =   0.0;
 A[1][0] =  -7.0; A[1][1] = 120.0; A[1][2] =  17.0; A[1][3] = -23.0; A[1][4] =  -6.0; A[1][5] =  -3.0;
@@ -29,16 +29,16 @@ b[3][0] = -25.0;
 b[4][0] = 77.0;
 b[5][0] = -17.0;
 
-// Now re-create A: Ar = L * L'
+// Get m = A*b
 hls::matrix_multiply<hls::NoTranspose,hls::NoTranspose,ROWS_COLS_A,ROWS_COLS_A,ROWS_COLS_A,1,ROWS_COLS_A,1,float,float>(A, b, m);
 
-solve_success = chol_fwbw_solve(A,m,x);
+solve_success = chol_fwbw_solve(A,m,br);
 
 printf("b = \n");
 hls::print_matrix<ROWS_COLS_A, 1, float, hls::NoTranspose>(b, "   ");
 
-printf("x reconstructed = \n");
-hls::print_matrix<ROWS_COLS_A, 1, float, hls::NoTranspose>(x, "   ");
+printf("b reconstructed = \n");
+hls::print_matrix<ROWS_COLS_A, 1, float, hls::NoTranspose>(br, "   ");
 
 // Figure out how to test
 // See a numerical linear algebra book for proper test condition

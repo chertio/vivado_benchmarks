@@ -1,0 +1,139 @@
+@I [LIC-101] Checked out feature [HLS]
+@I [HLS-10] Running '/tools/xilinx/Vivado_HLS/2015.1/bin/unwrapped/lnx64.o/vivado_hls'
+            for user 'rrs' on host 'bwrcrdsl-3.EECS.Berkeley.EDU' (Linux_x86_64 version 2.6.32-504.3.3.el6.x86_64) on Tue Nov 03 23:15:52 PST 2015
+            in directory '/tools/designs/rrs/bucket/vivado_benchmarks/chol_fwbw_solve'
+@I [HLS-10] Opening project '/tools/designs/rrs/bucket/vivado_benchmarks/chol_fwbw_solve/chol_fwbw_solve'.
+@I [HLS-10] Adding design file 'rig_cholesky.cpp' to the project
+@I [HLS-10] Adding design file 'rig_chol_fwbw_solve.cpp' to the project
+@I [HLS-10] Adding design file 'base_primitives.cpp' to the project
+@I [HLS-10] Adding test bench file 'testbench.cpp' to the project
+@I [HLS-10] Adding test bench file 'bench_cholesky.cpp' to the project
+@I [HLS-10] Adding test bench file 'bench_chol_fwbw_solve.cpp' to the project
+@I [HLS-10] Opening solution '/tools/designs/rrs/bucket/vivado_benchmarks/chol_fwbw_solve/chol_fwbw_solve/solution1'.
+@I [SYN-201] Setting up clock 'default' with a period of 10ns.
+@I [HLS-10] Setting target device to 'xc7vx690tffg1761-2'
+@I [HLS-10] Analyzing design file 'base_primitives.cpp' ... 
+@I [HLS-10] Analyzing design file 'rig_chol_fwbw_solve.cpp' ... 
+@I [HLS-10] Analyzing design file 'rig_cholesky.cpp' ... 
+@I [HLS-10] Validating synthesis directives ...
+@W [HLS-40] Directive 'UNROLL' for location 'cholesky_basic_my/col_loop' has been applied in multiple source file:
+/tools/designs/rrs/bucket/vivado_benchmarks/chol_fwbw_solve/base_primitives.cpp
+/tools/designs/rrs/bucket/vivado_benchmarks/chol_fwbw_solve/rig_chol_fwbw_solve.cpp
+/tools/designs/rrs/bucket/vivado_benchmarks/chol_fwbw_solve/rig_cholesky.cpp
+Please use function labels to distinguish different locations if necessary.
+@W [HLS-40] Directive 'UNROLL' for location 'cholesky_basic_my/diag_loop' has been applied in multiple source file:
+/tools/designs/rrs/bucket/vivado_benchmarks/chol_fwbw_solve/base_primitives.cpp
+/tools/designs/rrs/bucket/vivado_benchmarks/chol_fwbw_solve/rig_chol_fwbw_solve.cpp
+/tools/designs/rrs/bucket/vivado_benchmarks/chol_fwbw_solve/rig_cholesky.cpp
+Please use function labels to distinguish different locations if necessary.
+@W [HLS-40] Directive 'UNROLL' for location 'cholesky_basic_my/off_diag_loop' has been applied in multiple source file:
+/tools/designs/rrs/bucket/vivado_benchmarks/chol_fwbw_solve/base_primitives.cpp
+/tools/designs/rrs/bucket/vivado_benchmarks/chol_fwbw_solve/rig_chol_fwbw_solve.cpp
+/tools/designs/rrs/bucket/vivado_benchmarks/chol_fwbw_solve/rig_cholesky.cpp
+Please use function labels to distinguish different locations if necessary.
+@W [HLS-40] Directive 'UNROLL' for location 'cholesky_basic_my/sum_loop' has been applied in multiple source file:
+/tools/designs/rrs/bucket/vivado_benchmarks/chol_fwbw_solve/base_primitives.cpp
+/tools/designs/rrs/bucket/vivado_benchmarks/chol_fwbw_solve/rig_chol_fwbw_solve.cpp
+/tools/designs/rrs/bucket/vivado_benchmarks/chol_fwbw_solve/rig_cholesky.cpp
+Please use function labels to distinguish different locations if necessary.
+@W [HLS-40] Directive 'UNROLL' for location 'chol_decomp_simple/l_row_loop' has been applied in multiple source file:
+/tools/designs/rrs/bucket/vivado_benchmarks/chol_fwbw_solve/base_primitives.cpp
+/tools/designs/rrs/bucket/vivado_benchmarks/chol_fwbw_solve/rig_chol_fwbw_solve.cpp
+Please use function labels to distinguish different locations if necessary.
+@W [HLS-40] Directive 'UNROLL' for location 'chol_decomp_simple/l_col_loop' has been applied in multiple source file:
+/tools/designs/rrs/bucket/vivado_benchmarks/chol_fwbw_solve/base_primitives.cpp
+/tools/designs/rrs/bucket/vivado_benchmarks/chol_fwbw_solve/rig_chol_fwbw_solve.cpp
+Please use function labels to distinguish different locations if necessary.
+@W [HLS-40] Directive 'UNROLL' for location 'chol_decomp_simple/l_rc_loop' has been applied in multiple source file:
+/tools/designs/rrs/bucket/vivado_benchmarks/chol_fwbw_solve/base_primitives.cpp
+/tools/designs/rrs/bucket/vivado_benchmarks/chol_fwbw_solve/rig_chol_fwbw_solve.cpp
+Please use function labels to distinguish different locations if necessary.
+@W [HLS-40] Directive 'UNROLL' for location 'chol_decomp_simple/l_rr_loop' has been applied in multiple source file:
+/tools/designs/rrs/bucket/vivado_benchmarks/chol_fwbw_solve/base_primitives.cpp
+/tools/designs/rrs/bucket/vivado_benchmarks/chol_fwbw_solve/rig_chol_fwbw_solve.cpp
+Please use function labels to distinguish different locations if necessary.
+@W [HLS-40] Directive 'UNROLL' for location 'forward_substitution/l_row_loop' has been applied in multiple source file:
+/tools/designs/rrs/bucket/vivado_benchmarks/chol_fwbw_solve/base_primitives.cpp
+/tools/designs/rrs/bucket/vivado_benchmarks/chol_fwbw_solve/rig_chol_fwbw_solve.cpp
+/tools/designs/rrs/bucket/vivado_benchmarks/chol_fwbw_solve/rig_cholesky.cpp
+Please use function labels to distinguish different locations if necessary.
+@W [HLS-40] Directive 'UNROLL' for location 'forward_substitution/l_col_loop' has been applied in multiple source file:
+/tools/designs/rrs/bucket/vivado_benchmarks/chol_fwbw_solve/base_primitives.cpp
+/tools/designs/rrs/bucket/vivado_benchmarks/chol_fwbw_solve/rig_chol_fwbw_solve.cpp
+/tools/designs/rrs/bucket/vivado_benchmarks/chol_fwbw_solve/rig_cholesky.cpp
+Please use function labels to distinguish different locations if necessary.
+@W [HLS-40] Directive 'UNROLL' for location 'backward_substitution/l_col_loop' has been applied in multiple source file:
+/tools/designs/rrs/bucket/vivado_benchmarks/chol_fwbw_solve/base_primitives.cpp
+/tools/designs/rrs/bucket/vivado_benchmarks/chol_fwbw_solve/rig_chol_fwbw_solve.cpp
+/tools/designs/rrs/bucket/vivado_benchmarks/chol_fwbw_solve/rig_cholesky.cpp
+Please use function labels to distinguish different locations if necessary.
+@W [HLS-40] Directive 'UNROLL' for location 'backward_substitution/l_row_loop' has been applied in multiple source file:
+/tools/designs/rrs/bucket/vivado_benchmarks/chol_fwbw_solve/base_primitives.cpp
+/tools/designs/rrs/bucket/vivado_benchmarks/chol_fwbw_solve/rig_chol_fwbw_solve.cpp
+/tools/designs/rrs/bucket/vivado_benchmarks/chol_fwbw_solve/rig_cholesky.cpp
+Please use function labels to distinguish different locations if necessary.
+@I [HLS-10] Starting code transformations ...
+@I [XFORM-603] Inlining function 'prims::chol_fwbw_solve_generic<float, float, float, 6>' into 'chol_fwbw_solve' (rig_chol_fwbw_solve.cpp:7).
+@I [XFORM-603] Inlining function 'prims::chol_decomp_simple<float, float, 6>' into 'chol_fwbw_solve' (./base_primitives.h:134->rig_chol_fwbw_solve.cpp:7).
+@I [XFORM-603] Inlining function 'prims::forward_substitution<float, float, 6>' into 'chol_fwbw_solve' (./base_primitives.h:135->rig_chol_fwbw_solve.cpp:7).
+@I [XFORM-603] Inlining function 'prims::backward_substitution<float, float, 6>' into 'chol_fwbw_solve' (./base_primitives.h:136->rig_chol_fwbw_solve.cpp:7).
+@I [HLS-10] Checking synthesizability ...
+@I [XFORM-501] Unrolling loop 'l_row_loop' (./base_primitives.h:87) in function 'chol_fwbw_solve' completely.
+@I [XFORM-501] Unrolling loop 'l_col_loop' (./base_primitives.h:90) in function 'chol_fwbw_solve' completely.
+@I [XFORM-501] Unrolling loop 'l_rc_loop' (./base_primitives.h:92) in function 'chol_fwbw_solve' completely.
+@I [XFORM-501] Unrolling loop 'l_rr_loop' (./base_primitives.h:100) in function 'chol_fwbw_solve' completely.
+@I [XFORM-501] Unrolling loop 'l_row_loop' (./base_primitives.h:21) in function 'chol_fwbw_solve' completely.
+@I [XFORM-501] Unrolling loop 'l_col_loop' (./base_primitives.h:23) in function 'chol_fwbw_solve' completely.
+@I [XFORM-501] Unrolling loop 'l_col_loop' (./base_primitives.h:40) in function 'chol_fwbw_solve' completely.
+@I [XFORM-501] Unrolling loop 'l_row_loop' (./base_primitives.h:42) in function 'chol_fwbw_solve' completely.
+@I [XFORM-102] Partitioning array 'l_i' (./base_primitives.h:116) in dimension 1 automatically.
+@I [XFORM-102] Partitioning array 'x_intermediate' (./base_primitives.h:119) in dimension 1 automatically.
+@I [XFORM-102] Partitioning array 'l_i.0' (./base_primitives.h:116) automatically.
+@I [XFORM-102] Partitioning array 'l_i.1' (./base_primitives.h:116) automatically.
+@I [XFORM-102] Partitioning array 'l_i.2' (./base_primitives.h:116) automatically.
+@I [XFORM-102] Partitioning array 'l_i.3' (./base_primitives.h:116) automatically.
+@I [XFORM-102] Partitioning array 'l_i.4' (./base_primitives.h:116) automatically.
+@I [XFORM-102] Partitioning array 'l_i.5' (./base_primitives.h:116) automatically.
+@I [XFORM-102] Partitioning array 'x_intermediate.0' (./base_primitives.h:119) automatically.
+@I [XFORM-102] Partitioning array 'x_intermediate.1' (./base_primitives.h:119) automatically.
+@I [XFORM-102] Partitioning array 'x_intermediate.2' (./base_primitives.h:119) automatically.
+@I [XFORM-102] Partitioning array 'x_intermediate.3' (./base_primitives.h:119) automatically.
+@I [XFORM-102] Partitioning array 'x_intermediate.4' (./base_primitives.h:119) automatically.
+@I [XFORM-102] Partitioning array 'x_intermediate.5' (./base_primitives.h:119) automatically.
+@I [HLS-111] Elapsed time: 10.08 seconds; current memory usage: 0.156 MB.
+@I [HLS-10] Starting hardware synthesis ...
+@I [HLS-10] Synthesizing 'chol_fwbw_solve' ...
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Scheduling module 'chol_fwbw_solve' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [SCHED-11] Starting scheduling ...
+@I [SCHED-11] Finished scheduling.
+@I [HLS-111] Elapsed time: 0.44 seconds; current memory usage: 0.156 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Exploring micro-architecture for module 'chol_fwbw_solve' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [BIND-100] Starting micro-architecture generation ...
+@I [BIND-101] Performing variable lifetime analysis.
+@I [BIND-101] Exploring resource sharing.
+@I [BIND-101] Binding ...
+@I [BIND-100] Finished micro-architecture generation.
+@I [HLS-111] Elapsed time: 0.1 seconds; current memory usage: 0.156 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Generating RTL for module 'chol_fwbw_solve' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [RTGEN-500] Setting interface mode on port 'chol_fwbw_solve/A' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'chol_fwbw_solve/b' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'chol_fwbw_solve/x' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on function 'chol_fwbw_solve' to 'ap_ctrl_hs'.
+@I [RTGEN-100] Generating core module 'chol_fwbw_solve_fdiv_32ns_32ns_32_8': 2 instance(s).
+@I [RTGEN-100] Generating core module 'chol_fwbw_solve_fmul_32ns_32ns_32_2_max_dsp': 5 instance(s).
+@I [RTGEN-100] Generating core module 'chol_fwbw_solve_fsqrt_32ns_32ns_32_7': 1 instance(s).
+@I [RTGEN-100] Generating core module 'chol_fwbw_solve_fsub_32ns_32ns_32_4_full_dsp': 5 instance(s).
+@I [RTGEN-100] Finished creating RTL model for 'chol_fwbw_solve'.
+@I [HLS-111] Elapsed time: 0.17 seconds; current memory usage: 0.156 MB.
+@I [HLS-10] Finished generating all RTL models.
+@I [WSYSC-301] Generating RTL SystemC for 'chol_fwbw_solve'.
+@I [WVHDL-304] Generating RTL VHDL for 'chol_fwbw_solve'.
+@I [WVLOG-307] Generating RTL Verilog for 'chol_fwbw_solve'.
+@I [HLS-112] Total elapsed time: 87.12 seconds; peak memory usage: 0.156 MB.
+@I [LIC-101] Checked in feature [HLS]
